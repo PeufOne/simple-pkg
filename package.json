@@ -1,0 +1,32 @@
+{
+  "name": "simple-pkg",
+  "version": "1.0.0",
+  "description": "simple test of \"pkg\" api",
+  "main": "app.js",
+  "bin": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "prod": "node app.js",
+    "package": "pkg . --targets win --output ./dist/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeufOne/simple-pkg.git"
+  },
+  "author": "Jonas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeufOne/simple-pkg/issues"
+  },
+  "homepage": "https://github.com/PeufOne/simple-pkg#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "figlet": "^1.5.0",
+    "open": "^7.2.1",
+    "pkg": "^4.4.9"
+  },
+  "pkg": {
+    "assets": "./node_modules/figlet/fonts/Standard.flf"
+  }
+}
