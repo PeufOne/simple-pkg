@@ -4,6 +4,7 @@ const filget = require('figlet')
 
 const app = express()
 
+app.use('/api', require('./api/routes/index'))
 app.use(express.static('public'))
 
 app.listen(5000, () => {
